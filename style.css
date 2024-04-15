@@ -1,0 +1,82 @@
+:root{
+    --inyuma:linear-gradient(to bottom,rgb(83, 3, 83) 40%,rgb(245, 243, 243) 40%,rgb(238, 238, 238) 20%);
+    --transform:capitalize;
+    --t-size:12px;
+    --l-size:14px;
+    --t-color:grey;
+    --l-color:black;
+    --font-family:"work Sans",sans-serif;
+    --btn:whitesmoke;
+}
+body{
+    background: var(--inyuma);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.box{
+    background-color: whitesmoke;
+    width: 30%;
+    padding:2% 2%;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    box-shadow: 2px 3px 12px rgb(133, 129, 129);
+    box-shadow: 2px 3px 12px rgb(133, 129, 129);
+    border-radius: 5px;
+}
+h1{
+    font-weight: 600;
+    font-family: var(--font-family);
+    margin-left: 30px;
+}
+.q2,.q3,.q4,.q4,.q5{
+    margin-top: 20px;
+}
+label{
+    text-transform: var(--transform);
+    font-size: var(--l-size);
+    font-family: var(--font-family);
+    color: var(--l-color);
+    line-height: 20px;
+    font-style: bold;
+    font-weight: 600;
+}
+
+label,button{
+    cursor: pointer;
+}
+label:hover{
+    color:  rgb(199, 56, 199);
+}
+button{
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(199, 56, 199);
+    color:var(--btn);
+    font-size: var(--t-size);
+    position: absolute;
+    right: 4%;
+    margin-bottom: 10px;
+}
+
+p{
+    display:none;
+    color: var(--t-color);
+    font-size: var(--t-size);
+    font-family: var(--font-family);
+}
+.row{
+    border-bottom: 1px solid grey;
+    border-radius: 4px;
+    width: 102%;
+    opacity: 0.3;
+    margin-top: 20px;
+}
+.active{
+    display: flex;
+}
+@media (max-width:500){
+    body{
+        background-color: red;
+    }
+}
